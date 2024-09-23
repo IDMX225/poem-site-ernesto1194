@@ -1,16 +1,47 @@
-/* home */
-@use "../abstracts/variables" as var;
-@use "../base/typography" as type;
-
 body {
-  font-family: type.$font;
-  background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+  background-image: url("/src/images/ocean.jpg");
+}
+
+.container {
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 20px;
+  filter: grayscale(100%);
+
 }
 
 h1 {
-  color: var.$primary-color;
-  text-align: center;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 67px;
+  margin-bottom: 4px;
+  margin-top: 30px;
+}
+
+h2 {
+  color: whitesmoke;
+  font-family: cursive;
+}
+
+p {
+  border-radius: 20px;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: darkgray;
+  margin-top: 45px;
+  padding: 20px;
+  border: 2px solid darkgrey;
+  font-size: 25px;
 }
